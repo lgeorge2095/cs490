@@ -1,0 +1,26 @@
+
+Fantasy CTF: I found the first flag by playing the game. I used the given netcat command and followed the instructions.  picoCTF{m1113n1um_3d1710n_d5787049}
+
+
+Cookie Monster Secret Recipe: Going to the website and trying a random password didn’t work, but gave me a hint talking about the cookies in plain sight. I went on to inspect the elements, searching for everything, and found the secret recipe in the network tab. It was not a standard flag and needed to be decoded. picoCTF{c00k1e_m0nster_l0ves_c00kies_DE7A5E76}
+
+
+PH4ntom 1ntrud3r:
+picoCTF{1t_w4snt_th4t_h_4r_d}
+ezF0X3c0cw== NgI1NzkwOQ== XzM0c3lfdA== bnRfdGg0dA== YmhfNHJfZA== cGljb0NURg==
+picoCTF{1t_w4s_34sy_t0_f1nd_th4t_bh_4r_d}
+Took fragments from the wireshark packets and put them together. I couldn’t find the flag though as this didn’t work.
+
+
+hashcrack:
+I put in the given netcat command which brought up a hash and password. I used a hash identifier to identify the hash type. First one was MD5, second was SHA-1, and last was SHA 256. I then cracked each of these hashes and gave the correct password. This gave me the flag. picoCTF{UseStr0nG_h@shEs_&PaSswDs!_eff9dbe0}
+
+
+Head-dump:
+I launched the website and looked around until I came across #API Documentation which led me to another page where the heap dump was at. You could download and analyze the file, which I believe you were supposed to do. I could not get it analyzed so I could not locate the flag.
+
+
+RED:
+I downloaded the image and it’s a red square. One of the hints talked about what facebook was called now so I checked on the metadata. It has a poem in it and the first letters are CHECKLSB. I downloaded zsteg to use for png images and the flag was given after decoding. picoCTF{r3d_1s_th3_ult1m4t3_cur3_f0r_54dn355_}
+
+
